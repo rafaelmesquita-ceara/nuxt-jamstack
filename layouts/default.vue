@@ -1,10 +1,47 @@
 <template>
   <div>
-    <Nuxt />
+    <Menubar :model="items">
+      <template #end>
+        <Button
+          label="Sair"
+          icon="pi pi-power-off"
+          class="p-button-danger"
+          :style="{ 'margin-left': '0 .5em' }"
+          @click="$router.push('/')"
+        />
+      </template>
+    </Menubar>
+    <div style="margin-top: 90px">
+      <Nuxt />
+    </div>
   </div>
 </template>
-
+<script>
+export default {
+  data() {
+    return {
+      items: [
+        {
+          label: 'Início',
+          to: '/',
+        },
+        {
+          label: 'Blog',
+          icon: 'pi pi-fw pi-pencil',
+          to: '/blog/posts',
+        },
+      ],
+    }
+  },
+}
+</script>
 <style>
+.p-menubar {
+  overflow: hidden;
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  width: 100%; /* Full width */
+}
 html {
   font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI',
     Roboto, 'Helvetica Neue', Arial, sans-serif;

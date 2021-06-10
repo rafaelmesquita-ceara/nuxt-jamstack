@@ -18,7 +18,11 @@ export default {
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
-  css: [],
+  css: [
+    { src: 'primevue/resources/primevue.min.css' },
+    { src: 'primeicons/primeicons.css' },
+    { src: 'primeflex/primeflex.css' },
+  ],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [],
@@ -33,7 +37,55 @@ export default {
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
-  modules: ['@nuxt/content'],
+  modules: ['@nuxt/content', 'primevue/nuxt'],
+
+  primevue: {
+    theme: 'md-light-indigo',
+    ripple: true,
+    components: [
+      'AutoComplete',
+      'Avatar',
+      'Button',
+      'Badge',
+      'Calendar',
+      'Card',
+      'Checkbox',
+      'Column',
+      'ColorPicker',
+      'ContextMenu',
+      'DataTable',
+      'DataView',
+      'Dialog',
+      'Dropdown',
+      'FileUpload',
+      'InputMask',
+      'InputNumber',
+      'InputSwitch',
+      'InputText',
+      'MegaMenu',
+      'Menubar',
+      'Message',
+      'MultiSelect',
+      'OverlayPanel',
+      'Panel',
+      'PanelMenu',
+      'PickList',
+      'ProgressBar',
+      'RadioButton',
+      'Ripple',
+      'Sidebar',
+      'Slider',
+      'SplitButton',
+      'TabPanel',
+      'TabView',
+      'Textarea',
+      'Toast',
+      'ToggleButton',
+      'Toolbar',
+      'TreeTable',
+    ],
+    directives: ['Tooltip', 'BadgeDirective'],
+  },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {},

@@ -2,23 +2,10 @@
   <div class="container">
     <div>
       <Logo />
-      <h1 class="title">nuxt_jamstack</h1>
+      <h1 class="title">Blog com NuxtJS!</h1>
       <div class="links">
-        <a
-          href="https://nuxtjs.org/"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="button--green"
-        >
-          Documentation
-        </a>
-        <a
-          href="https://github.com/nuxt/nuxt.js"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="button--grey"
-        >
-          GitHub
+        <a href="/blog/posts" rel="noopener noreferrer" class="button--grey">
+          Blog
         </a>
       </div>
     </div>
