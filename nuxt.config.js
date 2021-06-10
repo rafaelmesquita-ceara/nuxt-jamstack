@@ -39,11 +39,15 @@ export default {
   build: {},
 
   generate: {
-    async routes() {
-      const { $content } = require('@nuxt/content')
-      const files = await $content().only(['path']).fetch()
-
-      return files.map((file) => (file.path === '/index' ? '/' : file.path))
+    routes() {
+      const fs = require('fs')
+      const path = require('path')
+      return fs.readdirSync('./content/blog').map((file) => {
+        return {
+          route: `/blog/${path.parse(file).name}`, // Return the slug
+          payload: require(`./content/blog/${file}`),
+        }
+      })
     },
   },
 }
