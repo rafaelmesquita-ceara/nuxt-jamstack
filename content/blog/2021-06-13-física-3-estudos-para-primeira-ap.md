@@ -41,4 +41,4 @@ description: Física 3, estudos para primeira AP
 * Duas partículas carregadas exercem forças uma sobre a outra. Se as cargas das partículas tem o mesmo sinal, as partículas se repelem. Se as cargas das partículas têm sinais opostos, as partículas se atraem.
 * A força de repulsão ou atração associada à carga elétrica é chamada de *força eletrostática*. A lei que permite calcular a força exercida por partículas carregadas é a *lei de Coulomb*
 
-  ![](/img/captura-de-tela-2021-06-13-173315.png)
+  ![123](/img/captura-de-tela-2021-06-13-173315.png "123")
